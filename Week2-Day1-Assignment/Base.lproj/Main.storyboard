@@ -17,48 +17,149 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GlA-gm-bhf">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="tshirt" translatesAutoresizingMaskIntoConstraints="NO" id="Ilz-qx-m0c">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="390"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="jMl-VM-CD9"/>
+                                    <constraint firstAttribute="width" constant="300" id="wqD-m9-LG6"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="jMl-VM-CD9"/>
+                                        <exclude reference="wqD-m9-LG6"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="jMl-VM-CD9"/>
+                                        <include reference="wqD-m9-LG6"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GlA-gm-bhf">
                                 <rect key="frame" x="0.0" y="390" width="600" height="210"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="BitMaker Labs Logo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JvM-Pt-N16">
-                                        <rect key="frame" x="22" y="15" width="556" height="37.5"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycs-Mm-NH3">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycs-Mm-NH3">
                                         <rect key="frame" x="22" y="51" width="556" height="86"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="JdQ-p3-G4N"/>
+                                        </constraints>
                                         <string key="text">This is logo presented by @bitmakerlabs. The PSD comes with a plain simple logo mockup template. You can edit the logo colour and use the smart layer to apply your designs. The high-resolution makes it easy to frame specific details with close-ups.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="JdQ-p3-G4N"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="JdQ-p3-G4N"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                            <rect key="frame" x="22" y="51" width="356" height="86"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                            <rect key="frame" x="22" y="13" width="756" height="53.5"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" ambiguous="YES" misplaced="YES" text="BitMaker Labs Logo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JvM-Pt-N16">
+                                        <rect key="frame" x="22" y="15" width="556" height="37.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="33" id="qx0-E8-sDX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="28"/>
+                                        <color key="textColor" red="0.070588238537311554" green="0.23137256503105164" blue="0.96078437566757202" alpha="1" colorSpace="deviceRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="qx0-E8-sDX"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="qx0-E8-sDX"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                            <rect key="frame" x="22" y="15" width="356" height="37.5"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                            <rect key="frame" x="22" y="15" width="756" height="0.0"/>
+                                        </variation>
                                     </label>
                                 </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="ycs-Mm-NH3" firstAttribute="leading" secondItem="GlA-gm-bhf" secondAttribute="leading" constant="22" id="BC1-69-k1u"/>
-                                    <constraint firstAttribute="bottom" secondItem="ycs-Mm-NH3" secondAttribute="bottom" constant="73" id="L1T-0D-CdV"/>
-                                    <constraint firstItem="JvM-Pt-N16" firstAttribute="leading" secondItem="GlA-gm-bhf" secondAttribute="leading" constant="22" id="UYd-T7-all"/>
-                                    <constraint firstAttribute="trailing" secondItem="JvM-Pt-N16" secondAttribute="trailing" constant="22" id="mDd-7c-3FB"/>
-                                    <constraint firstItem="ycs-Mm-NH3" firstAttribute="top" secondItem="JvM-Pt-N16" secondAttribute="bottom" constant="-1.5" id="ode-wH-v79"/>
-                                    <constraint firstAttribute="trailing" secondItem="ycs-Mm-NH3" secondAttribute="trailing" constant="22" id="p3S-wi-nI2"/>
-                                    <constraint firstItem="JvM-Pt-N16" firstAttribute="top" secondItem="GlA-gm-bhf" secondAttribute="top" constant="15" id="pLB-Tc-c0D"/>
+                                    <constraint firstItem="JvM-Pt-N16" firstAttribute="leading" secondItem="GlA-gm-bhf" secondAttribute="leading" constant="20" id="0eQ-8c-MZS"/>
+                                    <constraint firstItem="ycs-Mm-NH3" firstAttribute="top" secondItem="JvM-Pt-N16" secondAttribute="bottom" constant="-18" id="8yo-Lg-Nhj"/>
+                                    <constraint firstItem="JvM-Pt-N16" firstAttribute="top" secondItem="GlA-gm-bhf" secondAttribute="top" constant="15" id="UhV-pq-rg9"/>
+                                    <constraint firstAttribute="trailing" secondItem="ycs-Mm-NH3" secondAttribute="trailing" constant="22" id="eP5-t6-PNF"/>
+                                    <constraint firstAttribute="trailing" secondItem="JvM-Pt-N16" secondAttribute="trailing" constant="22" id="hRl-ml-nKJ"/>
+                                    <constraint firstItem="ycs-Mm-NH3" firstAttribute="leading" secondItem="GlA-gm-bhf" secondAttribute="leading" constant="22" id="mdY-as-VWk"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="0eQ-8c-MZS"/>
+                                        <exclude reference="UhV-pq-rg9"/>
+                                        <exclude reference="hRl-ml-nKJ"/>
+                                        <exclude reference="8yo-Lg-Nhj"/>
+                                        <exclude reference="eP5-t6-PNF"/>
+                                        <exclude reference="mdY-as-VWk"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="0eQ-8c-MZS"/>
+                                        <include reference="UhV-pq-rg9"/>
+                                        <include reference="hRl-ml-nKJ"/>
+                                        <include reference="8yo-Lg-Nhj"/>
+                                        <include reference="eP5-t6-PNF"/>
+                                        <include reference="mdY-as-VWk"/>
+                                    </mask>
+                                </variation>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tshirt" translatesAutoresizingMaskIntoConstraints="NO" id="Ilz-qx-m0c">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="390"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="GlA-gm-bhf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="42S-hr-mN3"/>
-                            <constraint firstAttribute="trailing" secondItem="Ilz-qx-m0c" secondAttribute="trailing" id="Hf5-Ah-xzV"/>
-                            <constraint firstItem="Ilz-qx-m0c" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="M9P-Tf-J64"/>
-                            <constraint firstItem="GlA-gm-bhf" firstAttribute="top" secondItem="Ilz-qx-m0c" secondAttribute="bottom" id="VPh-eW-68F"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GlA-gm-bhf" secondAttribute="bottom" id="d2r-Vg-2EC"/>
-                            <constraint firstItem="Ilz-qx-m0c" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.65" id="gyr-Ef-gEj"/>
-                            <constraint firstAttribute="trailing" secondItem="GlA-gm-bhf" secondAttribute="trailing" id="nnD-5g-gcP"/>
-                            <constraint firstItem="Ilz-qx-m0c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tex-Tf-rh9"/>
+                            <constraint firstAttribute="trailing" secondItem="GlA-gm-bhf" secondAttribute="trailing" id="5b9-pX-aWP"/>
+                            <constraint firstItem="Ilz-qx-m0c" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="GQj-3v-5eG"/>
+                            <constraint firstItem="Ilz-qx-m0c" firstAttribute="top" secondItem="GlA-gm-bhf" secondAttribute="top" id="aVv-3t-k8o"/>
+                            <constraint firstItem="GlA-gm-bhf" firstAttribute="leading" secondItem="Ilz-qx-m0c" secondAttribute="trailing" id="cGo-Lr-jok"/>
+                            <constraint firstItem="GlA-gm-bhf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="h3I-bV-4oj"/>
+                            <constraint firstItem="GlA-gm-bhf" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="k78-YH-4tI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GlA-gm-bhf" secondAttribute="bottom" id="qBp-EC-Sef"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GlA-gm-bhf" secondAttribute="bottom" id="swM-4f-ovq"/>
+                            <constraint firstItem="GlA-gm-bhf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="x90-Pz-U1N"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="GQj-3v-5eG"/>
+                                <exclude reference="aVv-3t-k8o"/>
+                                <exclude reference="5b9-pX-aWP"/>
+                                <exclude reference="cGo-Lr-jok"/>
+                                <exclude reference="h3I-bV-4oj"/>
+                                <exclude reference="k78-YH-4tI"/>
+                                <exclude reference="x90-Pz-U1N"/>
+                                <exclude reference="qBp-EC-Sef"/>
+                                <exclude reference="swM-4f-ovq"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="GQj-3v-5eG"/>
+                                <include reference="aVv-3t-k8o"/>
+                                <include reference="5b9-pX-aWP"/>
+                                <include reference="cGo-Lr-jok"/>
+                                <include reference="h3I-bV-4oj"/>
+                                <include reference="k78-YH-4tI"/>
+                                <include reference="x90-Pz-U1N"/>
+                                <include reference="qBp-EC-Sef"/>
+                                <include reference="swM-4f-ovq"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
