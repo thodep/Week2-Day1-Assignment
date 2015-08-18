@@ -26,7 +26,7 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycs-Mm-NH3">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycs-Mm-NH3">
                                         <rect key="frame" x="22" y="51" width="556" height="86"/>
                                         <string key="text">This is logo presented by @bitmakerlabs. The PSD comes with a plain simple logo mockup template. You can edit the logo colour and use the smart layer to apply your designs. The high-resolution makes it easy to frame specific details with close-ups.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -39,7 +39,7 @@
                                     <constraint firstAttribute="bottom" secondItem="ycs-Mm-NH3" secondAttribute="bottom" constant="73" id="L1T-0D-CdV"/>
                                     <constraint firstItem="JvM-Pt-N16" firstAttribute="leading" secondItem="GlA-gm-bhf" secondAttribute="leading" constant="22" id="UYd-T7-all"/>
                                     <constraint firstAttribute="trailing" secondItem="JvM-Pt-N16" secondAttribute="trailing" constant="22" id="mDd-7c-3FB"/>
-                                    <constraint firstItem="ycs-Mm-NH3" firstAttribute="top" secondItem="JvM-Pt-N16" secondAttribute="bottom" constant="-1.5" id="ode-wH-v79"/>
+                                    <constraint firstItem="ycs-Mm-NH3" firstAttribute="top" secondItem="JvM-Pt-N16" secondAttribute="bottom" constant="-2" id="ode-wH-v79"/>
                                     <constraint firstAttribute="trailing" secondItem="ycs-Mm-NH3" secondAttribute="trailing" constant="22" id="p3S-wi-nI2"/>
                                     <constraint firstItem="JvM-Pt-N16" firstAttribute="top" secondItem="GlA-gm-bhf" secondAttribute="top" constant="15" id="pLB-Tc-c0D"/>
                                 </constraints>
