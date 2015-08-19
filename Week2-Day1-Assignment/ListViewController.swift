@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ListViewController: UIViewController,UITableViewDelegate {
+class ListViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
     @IBOutlet var tableView: UITableView!
     var myFavoritesGames = ["Super Meat Boy","Doom","Super Mario Bros","F Zero","Grand Theft Auto","Donkey Kong Tropical Freeze"]
@@ -18,17 +18,14 @@ class ListViewController: UIViewController,UITableViewDelegate {
         return myFavoritesGames.count
     }
     
-    // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
-    // Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
+  
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell:UITableViewCell = (self.tableView.dequeueReusableCellWithIdentifier( "cell") )! as! UITableViewCell
-        //make text italic
-        cell.textLabel?.font =  UIFont.italicSystemFontOfSize(23.0)
         
         cell.textLabel?.text = self.myFavoritesGames[indexPath.row]
-        
+    
         
         return cell
         
@@ -38,7 +35,7 @@ class ListViewController: UIViewController,UITableViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.tableView.registerClass(UITableViewCell.self , forCellReuseIdentifier: "cell")
+        tableView.registerClass(UITableViewCell.self , forCellReuseIdentifier: "cell")
     }
 
 
