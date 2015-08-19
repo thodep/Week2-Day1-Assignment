@@ -13,6 +13,7 @@
 		D1CF2C001B826604001C7FCB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1CF2BFF1B826604001C7FCB /* Images.xcassets */; };
 		D1CF2C031B826604001C7FCB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1CF2C011B826604001C7FCB /* LaunchScreen.xib */; };
 		D1CF2C0F1B826605001C7FCB /* Week2_Day1_AssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CF2C0E1B826605001C7FCB /* Week2_Day1_AssignmentTests.swift */; };
+		D1D1E4611B84298400A48E10 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D1E4601B84298400A48E10 /* ListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		D1CF2C081B826605001C7FCB /* Week2-Day1-AssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Week2-Day1-AssignmentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1CF2C0D1B826605001C7FCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1CF2C0E1B826605001C7FCB /* Week2_Day1_AssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Week2_Day1_AssignmentTests.swift; sourceTree = "<group>"; };
+		D1D1E4601B84298400A48E10 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				D1CF2BF81B826604001C7FCB /* AppDelegate.swift */,
 				D1CF2BFA1B826604001C7FCB /* ViewController.swift */,
+				D1D1E4601B84298400A48E10 /* ListViewController.swift */,
 				D1CF2BFC1B826604001C7FCB /* Main.storyboard */,
 				D1CF2BFF1B826604001C7FCB /* Images.xcassets */,
 				D1CF2C011B826604001C7FCB /* LaunchScreen.xib */,
@@ -214,6 +217,7 @@
 			files = (
 				D1CF2BFB1B826604001C7FCB /* ViewController.swift in Sources */,
 				D1CF2BF91B826604001C7FCB /* AppDelegate.swift in Sources */,
+				D1D1E4611B84298400A48E10 /* ListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +415,7 @@
 				D1CF2C141B826605001C7FCB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D1CF2C151B826605001C7FCB /* Build configuration list for PBXNativeTarget "Week2-Day1-AssignmentTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +424,7 @@
 				D1CF2C171B826605001C7FCB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
