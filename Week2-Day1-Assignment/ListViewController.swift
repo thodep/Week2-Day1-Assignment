@@ -31,7 +31,21 @@ class ListViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         
     }
     
+ func  tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        let alertController = UIAlertController(title: "Row Selected", message: "You've selected a row", preferredStyle: .Alert)
+        
+        let okayAction = UIAlertAction(title: "OKAY", style: .Cancel) {
+            (action) in
+            println(action)
+        }
+        
+        presentViewController(alertController, animated: true, completion: nil)
     
+        performSegueWithIdentifier("presentation", sender: self)
+    
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -45,14 +59,18 @@ class ListViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     }
     
 
-    /*
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
+        // Get the new view controller using segue.destinationViewController
         // Pass the selected object to the new view controller.
+        if segue.identifier == "presentation"
+        {
+            if let destinationVC:ViewController = segue.destinationViewController as? ViewController {
+                // Do something cool. Like pass data from one view controller to another.
+                print("Let's do something cool")
+            }
+        }
     }
-    */
-
 }
