@@ -10,9 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var companyLog: UIImageView!
+    
+    @IBOutlet weak var productLabel: UILabel!
+    
+    @IBOutlet weak var productDescription: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.productLabel.text = "New Title"
+        self.productDescription.text = "This is some text showing that we can update this on the fly"
     }
 
     override func didReceiveMemoryWarning() {

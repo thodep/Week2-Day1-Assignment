@@ -150,6 +150,11 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="companyLog" destination="Ilz-qx-m0c" id="ecD-Sf-2KA"/>
+                        <outlet property="productDescription" destination="ycs-Mm-NH3" id="h57-XV-PBv"/>
+                        <outlet property="productLabel" destination="JvM-Pt-N16" id="Q3U-wJ-eSG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -177,7 +182,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="presentation" identifier="presentation" id="r6T-wr-eWa"/>
+                                            <segue destination="BYZ-38-t0r" kind="presentation" identifier="presentation" modalPresentationStyle="fullScreen" id="r6T-wr-eWa"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

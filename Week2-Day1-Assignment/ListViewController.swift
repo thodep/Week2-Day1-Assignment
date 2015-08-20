@@ -40,7 +40,7 @@ class ListViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
             println(action)
         }
         
-        presentViewController(alertController, animated: true, completion: nil)
+     //   presentViewController(alertController, animated: true, completion:nil)
     
         performSegueWithIdentifier("presentation", sender: self)
     
