@@ -11,11 +11,11 @@ import UIKit
 class ListViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
     @IBOutlet var tableView: UITableView!
-    var myFavoritesGames = ["Super Meat Boy","Doom","Super Mario Bros","F Zero","Grand Theft Auto","Donkey Kong Tropical Freeze"]
+    var cupcakeNames = ["Strawberry Chocolate","Red Velvet","Strawberry Pink","Chocolate Ocean","Vanilla Blue"]
     
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return myFavoritesGames.count
+        return cupcakeNames.count
     }
     
   
@@ -24,9 +24,8 @@ class ListViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         
         let cell:UITableViewCell = (self.tableView.dequeueReusableCellWithIdentifier( "cell") )! as! UITableViewCell
         
-        cell.textLabel?.text = self.myFavoritesGames[indexPath.row]
+        cell.textLabel?.text = self.cupcakeNames[indexPath.row]
     
-        
         return cell
         
     }
@@ -63,13 +62,22 @@ class ListViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController
-        // Pass the selected object to the new view controller.
+        
         if segue.identifier == "presentation"
         {
             if let destinationVC:ViewController = segue.destinationViewController as? ViewController {
-                // Do something cool. Like pass data from one view controller to another.
-                print("Let's do something cool")
+               // if let indexPath = tableView.indexPathForCell(sender as! UITableViewCell)
+                
+                
+                    if let cell = sender as? UITableViewCell,
+                        let indexPath = tableView.indexPathForCell( cell ) {
+                            print("Let's do something cool")
+                            destinationVC.titleData = cupcakeNames[indexPath.row]
+                }
+                
+           
+                //print("Let's do something cool")
+                
             }
         }
     }

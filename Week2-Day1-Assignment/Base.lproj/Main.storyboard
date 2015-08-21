@@ -160,7 +160,7 @@
             </objects>
             <point key="canvasLocation" x="1669" y="373"/>
         </scene>
-        <!--List View Controller-->
+        <!--Cupcake Heaven-->
         <scene sceneID="6Kg-Bt-THB">
             <objects>
                 <viewController id="976-Wt-vrN" customClass="ListViewController" customModule="Week2_Day1_Assignment" customModuleProvider="target" sceneMemberID="viewController">
@@ -200,7 +200,7 @@
                             <constraint firstItem="Iw7-j1-61B" firstAttribute="bottom" secondItem="HPf-yv-SXh" secondAttribute="top" id="O5d-q9-26n"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="yEE-2p-KTH"/>
+                    <navigationItem key="navigationItem" title="Cupcake Heaven" id="yEE-2p-KTH"/>
                     <connections>
                         <outlet property="tableView" destination="Iw7-j1-61B" id="lrN-3f-ZSb"/>
                     </connections>
