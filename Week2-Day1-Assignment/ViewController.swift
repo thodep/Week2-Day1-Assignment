@@ -26,6 +26,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         self.productLabel.text = titleData
         self.productDescription.text = "This is some text showing that we can update this on the fly"
+      
+
     }
 
     override func didReceiveMemoryWarning() {

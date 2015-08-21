@@ -11,6 +11,9 @@ import UIKit
 class ListViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
     @IBOutlet var tableView: UITableView!
+    
+    var indexPath:NSIndexPath = NSIndexPath()
+    
     var cupcakeNames = ["Strawberry Chocolate","Red Velvet","Strawberry Pink","Chocolate Ocean","Vanilla Blue"]
     
     
@@ -31,19 +34,22 @@ class ListViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     }
     
  func  tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
-        let alertController = UIAlertController(title: "Row Selected", message: "You've selected a row", preferredStyle: .Alert)
-        
-        let okayAction = UIAlertAction(title: "OKAY", style: .Cancel) {
-            (action) in
-            println(action)
-        }
-        
-     //   presentViewController(alertController, animated: true, completion:nil)
     
-        performSegueWithIdentifier("presentation", sender: self)
+    let alertController = UIAlertController(title: "Row Selected", message: "You've selected a row", preferredStyle: .Alert)
     
+    self.indexPath = indexPath
+    var okayAction:UIAlertAction = UIAlertAction(title: "OKAY", style: UIAlertActionStyle.Default)
+            { (action) -> Void in
+                
+    self.performSegueWithIdentifier("presentation", sender: self)
     }
+        
+  
+    alertController.addAction(okayAction)
+    self.presentViewController(alertController, animated: true) { () -> Void in }
+  
+   
+   }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,19 +72,10 @@ class ListViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         if segue.identifier == "presentation"
         {
             if let destinationVC:ViewController = segue.destinationViewController as? ViewController {
-               // if let indexPath = tableView.indexPathForCell(sender as! UITableViewCell)
-                
-                
-                    if let cell = sender as? UITableViewCell,
-                        let indexPath = tableView.indexPathForCell( cell ) {
-                            print("Let's do something cool")
-                            destinationVC.titleData = cupcakeNames[indexPath.row]
-                }
-                
-           
-                //print("Let's do something cool")
-                
+         
+                destinationVC.titleData =  cupcakeNames[self.indexPath.row]
             }
+            
         }
     }
 }
